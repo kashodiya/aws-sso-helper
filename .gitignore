@@ -1,0 +1,18 @@
+# Configuration files (contains sensitive info)
+config.ini
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# AWS credentials
+.aws/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

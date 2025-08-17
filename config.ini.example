@@ -1,6 +1,6 @@
 [aws]
 sso_profile = sso_profile
-sso_start_url = https://stlfrb.awsapps.com/start
+sso_start_url = https://stlxyz.awsapps.com/start
 sso_region = us-east-1
 default_region = us-east-1
 output_format = json

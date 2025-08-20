@@ -25,7 +25,7 @@ AWS SSO Helper streamlines the process of:
 
 1. **AWS CLI v2**: Install from [AWS CLI Installation Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 2. **Python 3.7+**: Download from [python.org](https://www.python.org/downloads/)
-3. **boto3**: Install via pip: `pip install boto3`
+3. **Python Dependencies**: Install via requirements.txt (see Installation section)
 4. **AWS SSO Configuration**: Your AWS SSO must be configured in `~/.aws/config`
 
 ## Initial AWS SSO Setup
@@ -42,18 +42,26 @@ output = json
 
 Replace `https://your-sso-portal.awsapps.com/start` with your organization's SSO start URL.
 
-1. **Git clone**:
+## Installation
+
+1. **Clone the repository**:
 ```bash
 git clone <repository-url>
-cd aws-sso-login
+cd aws-sso-helper
 ```
 
-2. **Install dependencies**:
+2. **Create a virtual environment (recommended)**:
 ```bash
-pip install boto3
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-3. **Configure the tool**:
+3. **Install dependencies**:
+```bash
+pip install -r requirements.txt
+```
+
+4. **Configure the tool**:
 
 **Windows:**
 ```cmd
